@@ -2,19 +2,19 @@
 
 [Overview](../README.md) · [Contribution guide](../CONTRIBUTING.md) · [Roadmap](ROADMAP.md)
 
-**Seven scoped proposals for the R0 core.** These are planned tasks, not existing GitHub Issues and not newly confirmed defects. Individual maintainer Issues are planned after public-release approval. In the meantime, a contributor with repository access can open a proposal to agree scope.
+**Seven scoped directions for the R0 core.** Six are tracked in the GitHub Issues below. The evidence-result API contract remains a design proposal, not an open Issue. These tasks are planned improvements, not newly confirmed defects.
 
-All work uses synthetic or public fixtures. No model service, protected holdout or private source project is needed.
+All work uses synthetic or public fixtures. No model service, protected holdout or private source project is needed. Comment on an existing Issue before starting to avoid duplicate work.
 
-| # | Proposal | Suggested entry point |
-| --- | --- | --- |
-| 1 | [Incomplete-evidence demo](#1-offline-incomplete-demo) | First contribution: examples and tests |
-| 2 | [Path and Unicode fixtures](#2-cross-platform-path-and-unicode-fixtures) | First contribution: Python testing |
-| 3 | [Evidence-result contract](#3-evidence-result-api-contract) | API design and test contracts |
-| 4 | [Source consistency](#4-source-snapshot-consistency-tests) | Reproducibility and concurrency testing |
-| 5 | [Bounded report renderer](#5-bounded-report-rendering) | Deterministic presentation |
-| 6 | [Cost-matched baseline design](#6-cost-matched-baseline-design) | Evaluation research |
-| 7 | [Newcomer quickstart validation](#7-newcomer-quickstart-validation) | First contribution: documentation |
+| # | Direction | GitHub task | Suggested entry point |
+| --- | --- | --- | --- |
+| 1 | [Incomplete-evidence demo](#1-offline-incomplete-demo) | [Issue #2](https://github.com/Pipirasas/AI-Council-Experimental/issues/2) | First contribution: examples and tests |
+| 2 | [Path and Unicode fixtures](#2-cross-platform-path-and-unicode-fixtures) | [Issue #3](https://github.com/Pipirasas/AI-Council-Experimental/issues/3) | First contribution: Python testing |
+| 3 | [Evidence-result contract](#3-evidence-result-api-contract) | Design proposal; no Issue yet | API design and test contracts |
+| 4 | [Source consistency](#4-source-snapshot-consistency-tests) | [Issue #4](https://github.com/Pipirasas/AI-Council-Experimental/issues/4) | Reproducibility and concurrency testing |
+| 5 | [Bounded report renderer](#5-bounded-report-rendering) | [Issue #5](https://github.com/Pipirasas/AI-Council-Experimental/issues/5) | Deterministic presentation |
+| 6 | [Cost-matched baseline design](#6-cost-matched-baseline-design) | [Issue #6](https://github.com/Pipirasas/AI-Council-Experimental/issues/6) | Evaluation research |
+| 7 | [Newcomer quickstart validation](#7-newcomer-quickstart-validation) | [Issue #7](https://github.com/Pipirasas/AI-Council-Experimental/issues/7) | First contribution: documentation |
 
 ## 1. Offline INCOMPLETE demo
 

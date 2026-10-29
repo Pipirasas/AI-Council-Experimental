@@ -8,7 +8,7 @@
 
 | Stage | Status | Focus | Evidence needed to advance |
 | --- | --- | --- | --- |
-| **R0 — Contributor preview** | Available as the current private candidate; public launch pending | Offline core, synthetic fixtures, demo, licensing and contributor workflow. | Local/CI checks, selected-file privacy and ownership review, explicit publication decision. |
+| **R0 — Contributor preview** | Current experimental source snapshot | Offline core, synthetic fixtures, demo, licensing and contributor workflow. | Local/CI checks, selected-file privacy and ownership review, explicit publication decision. |
 | **R1 — Evidence interfaces** | Proposed | Clear acquisition/completeness contracts, portability, source-consistency tests and bounded report presentation. | Reproducible negative regressions with positive controls; no weakening of provenance rules. |
 | **R2 — Controlled model adapter** | Proposed; not included in R0 | Explicit inputs, bounded resources, auditable outputs and defined failure handling. | Adapter design review and cost accounting before model-backed experiments. |
 | **R3 — Fair comparison** | Research plan; not completed | Preregistered, cost-matched Council versus strong single-model evaluation. | Frozen protocol, independent adjudication, held-out cases and reported uncertainty. |
@@ -16,7 +16,7 @@
 
 ## Start without waiting for model infrastructure
 
-The [seven contribution proposals](GOOD_FIRST_ISSUES.md) focus on work possible now: an incomplete-evidence demo, cross-platform tests, an evidence-result contract, source consistency, a report renderer, evaluation design and newcomer documentation.
+The [contribution guide and task index](GOOD_FIRST_ISSUES.md) cover work possible now: an incomplete-evidence demo, cross-platform tests, an evidence-result contract, source consistency, a report renderer, evaluation design and newcomer documentation. Six directions have open GitHub Issues; the evidence-result contract remains a design proposal.
 
 ## What is not a release milestone
 
