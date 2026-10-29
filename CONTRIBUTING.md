@@ -1,27 +1,47 @@
 # Contributing to AI Council
 
-The maintainer welcomes **small, reviewable, evidence-backed** contributions to this experimental audit core. This is not a competition to produce the greatest number of alleged bugs.
+[Project overview](README.md) · [Find a task](docs/GOOD_FIRST_ISSUES.md) · [Architecture](docs/ARCHITECTURE.md) · [Code of conduct](CODE_OF_CONDUCT.md)
 
-## Working agreement
+Contribute a **small, reproducible improvement** to the experimental evidence-audit core. The goal is useful, supported conclusions—not the largest number of alleged bugs.
 
-1. Open or comment on an Issue to establish a bounded problem and expected behavior.
-2. Work only with synthetic/public fixtures. **Never upload private projects, credentials, patient information, internal logs or protected holdouts**.
-3. First write a negative regression demonstrating the old behavior and a positive control preventing an over-strict fix.
-4. Change the minimum code necessary; do not weaken source identity, evidence provenance or fail-closed rules.
-5. Run `python -B -m unittest discover -s tests -v` and `python -B scripts/check_public_tree.py`.
-6. Describe what was proven and what was only hypothesized. A static observation is not a runtime test.
-7. Open a PR with test output, limitations, affected modules and a clear STOP condition.
+## Your first contribution
 
-## Scope of initial contributions
+| Step | What to do |
+| --- | --- |
+| **1. Choose a bounded task** | Start with the [seven contribution proposals](docs/GOOD_FIRST_ISSUES.md). Open or comment on an Issue before substantial work. |
+| **2. Establish the evidence** | Write a negative regression for the old behavior and a positive control that prevents an over-strict fix. |
+| **3. Make the smallest useful change** | Preserve source identity, evidence provenance, completion accounting and fail-closed behavior. |
+| **4. Explain the result** | Submit a PR with reproduction, tests, limitations and what remains unproven. |
 
-See [good first issues](docs/GOOD_FIRST_ISSUES.md). Focus on source evidence identity, completion accounting, offline portability, reproducible evaluation infrastructure and documentation. Model integrations and new authority rules require separate design review.
+You need Python 3.12+ and the source checkout for offline development. R0 tests and the demo use the standard library; no API key, paid AI plan or model download is required.
 
-## Maintainer decisions
+## Run the local checks
 
-The project maintainer **@Pipirasas** is responsible for review, release scope, merge decisions and license approval. A successful CI run is not authorization to merge or to publish private evaluation material.
+From the repository root:
 
-By submitting a contribution for inclusion, you confirm that you have the necessary rights to submit it under the repository's Apache-2.0 license. Preserve third-party notices and identify generated or externally sourced material when it affects licensing or evidence quality.
+```bash
+python -B -m unittest discover -s tests -v
+python -B -m examples.offline_demo
+python -B scripts/check_public_tree.py
+```
 
-## Contact
+These Python commands also work in PowerShell. The path check is deliberately limited; it is not a complete secret scan or licensing audit.
 
-Use GitHub Issues, then Discussions when enabled. Do not post personal emails or security-sensitive reports in issues; see [CONTACT.md](CONTACT.md) and [SECURITY.md](SECURITY.md).
+## Non-negotiable boundaries
+
+- Use synthetic or public fixtures. Never upload private projects, credentials, patient information, internal logs or protected evaluation cases.
+- Separate a static hypothesis from an executed reproduction. Report what was actually tested, on which platform, and with what result.
+- Do not replace authoritative evidence with model agreement or weaken checks to obtain a passing result.
+- Model integrations and new proof/authority rules require a separate design review. They are not implicit in an R0 documentation or test task.
+
+## What to put in a pull request
+
+State the problem, why the selected source supports it, the narrow change and the test results. Include known limits and a clear condition under which work must stop rather than silently retry. Use the repository's [PR template](.github/pull_request_template.md).
+
+## Review, rights and contact
+
+Lead maintainer **[@Pipirasas](https://github.com/Pipirasas)** controls review, merges and release decisions. Passing CI is not automatic merge or publication approval. See [GOVERNANCE.md](GOVERNANCE.md).
+
+Submit only contributions you have the necessary rights to provide under the repository's [Apache-2.0 license](LICENSE). Preserve third-party notices and identify generated or externally sourced material when it affects licensing or evidence quality.
+
+For ordinary questions, use GitHub Issues; Discussions can be used after they are enabled. No personal email is published. Sensitive reports follow [SECURITY.md](SECURITY.md), not a public issue. See [CONTACT.md](CONTACT.md).
